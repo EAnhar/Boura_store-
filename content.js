@@ -1,6 +1,7 @@
 // فقط مصفوفه المنتجات تحتاج تغيير مع البقية 
 Products = [
     {
+        // المنتج الاول 
         "id": "1",
         // اسم النتج 
         "name": "Men Navy Blue Solid Sweatshirt", 
@@ -16,18 +17,13 @@ Products = [
         ],
         // وصف المنتج
         "description": "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
-        // "size": [
-        //     1,
-        //     1,
-        //     0,
-        //     1,
-        //     0
-        // ],
-        "isAccessory": false,
+        // الماركة (ممكن نستغني عنه او نحط boura)
         "brand": "United Colors of Benetton",
+        // السعر 
         "price": 2599
     },
     {
+        // المنتج الثاني
         "id": "2",
         "name": "White 2nd Gen AirPods with Charging Case",
         "preview": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/6661d579-12ae-456b-b8f2-e78e5256a99c1558948436173-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-1.jpg",
@@ -37,14 +33,6 @@ Products = [
             "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/27569983-fada-4874-9306-14c945c234781558948436148-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-3.jpg"
         ],
         "description": "AirPods with Charging Case: More than 24 hours listening time,3 up to 18 hours talk time8. AirPods (single charge): Up to 5 hours listening time,1 up to 3 hours talk time2. 15 minutes in the case equals up to 3 hours listening time4 or up to 2 hours talk time. Warranty: 1 year. Warranty provided by Brand/Manufacturer",
-        "size": [
-            1,
-            1,
-            1,
-            1,
-            1
-        ],
-        "isAccessory": true,
         "brand": "Apple",
         "price": 14999
     }
@@ -91,7 +79,6 @@ function dynamicClothingSection(ob) {
 }
 
 let mainContainer = document.getElementById("mainContainer");
-let containerClothing = document.getElementById("containerClothing");
 let containerAccessories = document.getElementById("containerAccessories");
 
 
@@ -104,15 +91,8 @@ if (document.cookie.indexOf(",counter=") >= 0) {
 }
 
 for (let i = 0; i < Products.length; i++) {
-  if (Products[i].isAccessory) {
     console.log(Products[i]);
     containerAccessories.appendChild(
       dynamicClothingSection(Products[i])
     );
-  } else {
-    console.log(Products[i]);
-    containerClothing.appendChild(
-      dynamicClothingSection(Products[i])
-    );
-  }
 }
