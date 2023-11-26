@@ -4,38 +4,75 @@ Products = [
         // المنتج الاول 
         "id": "1",
         // اسم النتج 
-        "name": "Men Navy Blue Solid Sweatshirt", 
+        "name": "سوار النوى واللؤلؤ", 
         // الصورة الي تظهر بالصفحة الرئيسية
-        "preview": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg",
+        "preview": "img/سواره.jpg",
         // صور المعاينة اللي تظهر بصفحة تفاصيل المنتج
         "photos": [
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg",
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/efc3d5b9-1bb3-4427-af53-7acae7af98951541402833591-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-2.jpg",
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg",
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/66490b64-32de-44b4-a6e4-fe36f1c040051541402833548-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-4.jpg",
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/957be784-7c5d-4e90-ab9f-0928015b22891541402833645-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-5.jpg"
+            "img/سواره.jpg",
+            // "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/efc3d5b9-1bb3-4427-af53-7acae7af98951541402833591-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-2.jpg",
+            // "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg",
+            // "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/66490b64-32de-44b4-a6e4-fe36f1c040051541402833548-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-4.jpg",
+            // "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/957be784-7c5d-4e90-ab9f-0928015b22891541402833645-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-5.jpg"
         ],
         // وصف المنتج
-        "description": "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
+        "description": "سوار فاخر مصنوع من نوى التمر واللؤلؤ الزراعي.",
         // الماركة (ممكن نستغني عنه او نحط boura)
-        "brand": "United Colors of Benetton",
+        "brand": "بؤرة",
         // السعر 
-        "price": 2599
+        "price": 65
     },
     {
         // المنتج الثاني
         "id": "2",
-        "name": "White 2nd Gen AirPods with Charging Case",
-        "preview": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/6661d579-12ae-456b-b8f2-e78e5256a99c1558948436173-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-1.jpg",
+        "name": "خاتم",
+        "preview": "img/خاتم.jpg",
         "photos": [
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/6661d579-12ae-456b-b8f2-e78e5256a99c1558948436173-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-1.jpg",
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/9b14396e-0ee1-46b4-833c-4a2c35b5ce661558948436160-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-2.jpg",
-            "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/27569983-fada-4874-9306-14c945c234781558948436148-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-3.jpg"
+            "img/خاتم.jpg",
+            // "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/9b14396e-0ee1-46b4-833c-4a2c35b5ce661558948436160-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-2.jpg",
+            // "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/27569983-fada-4874-9306-14c945c234781558948436148-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-3.jpg"
         ],
-        "description": "AirPods with Charging Case: More than 24 hours listening time,3 up to 18 hours talk time8. AirPods (single charge): Up to 5 hours listening time,1 up to 3 hours talk time2. 15 minutes in the case equals up to 3 hours listening time4 or up to 2 hours talk time. Warranty: 1 year. Warranty provided by Brand/Manufacturer",
-        "brand": "Apple",
-        "price": 14999
-    }
+        "description": "خاتم يتميز بتصميم بسيط يجمع بين نوى التمر، يمنحك لمسة طبيعية وأنيقة في إكسسوارك اليومي",
+        "brand": "بؤرة",
+        "price": 55
+    },
+    {
+        // المنتج الثالث
+        "id": "3",
+        "name": "تعليقة",
+        "preview": "img/تعليقه.jpg",
+        "photos": [
+            "img/تعليقه.jpg",
+        ],
+        "description": "تعليقة يتميز بتصميم بسيط يجمع بين نوى التمر، يمنحك لمسة طبيعية وأنيقة في إكسسوارك اليومي",
+        "brand": "بؤرة",
+        "price": 40
+    },
+    {
+        // المنتج الرابع
+        "id": "4",
+        "name": "سبحة ملونة",
+        "preview": "img/سبحة.jpg",
+        "photos": [
+            "img/سبحة.jpg",
+        ],
+        "description": "سبحة تمر تتميز ببساطة تصميمها وجمال الطبيعة. مصنوعة من حبيبات التمر ",
+        "brand": "بؤرة",
+        "price": 150
+    },
+    {
+      // المنتج الخامس
+      "id": "5",
+      "name": "قلادة",
+      "preview": "img/قلادة.jpg",
+      "photos": [
+          "img/قلادة.jpg",
+      ],
+      "description": "قلادة تمر تتميز ببساطة تصميمها وجمال الطبيعة. مصنوعة من حبيبات التمر ",
+      "brand": "بؤرة",
+      "price": 85
+  }
+
   ];
 
 // اللي تحت ما يحتاج تغيير
@@ -65,7 +102,7 @@ function dynamicClothingSection(ob) {
   h4.appendChild(h4Text);
 
   let h2 = document.createElement("h2");
-  let h2Text = document.createTextNode("rs  " + ob.price);
+  let h2Text = document.createTextNode("SR  " + ob.price);
   h2.appendChild(h2Text);
 
   boxDiv.appendChild(boxLink);

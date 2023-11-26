@@ -24,6 +24,18 @@
     letter-spacing: 1px;
     word-spacing: 1px;
 }
+#aboutUs p
+{
+    font-family: 'Ruwudu', serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+#aboutUs h1
+{
+    font-family: 'Ruwudu', serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
