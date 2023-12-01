@@ -141,7 +141,9 @@
 
  <script>
     // <!-- slider scripte -->
-     $('#containerSlider').slick({
+    $(document).ready(function(){
+        // Your slider initialization and other jQuery-dependent code here
+        $('#containerSlider').slick({
          dots: true,
          infinite: true,
          slidesToShow: 1,
@@ -150,6 +152,8 @@
          autoplaySpeed: 5000,
          rtl: true,  // إضافة هذه الخاصية
          });
+    });
+    
  </script>
 </body>
 </html>
