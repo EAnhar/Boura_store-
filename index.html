@@ -95,17 +95,33 @@
 
         </section>
     </header>
-    <!-- Slider  -->
+    <!-- Slider 
     <section>
         <div id="containerSlider">
             <div id="slidingImage"> <img src="img/4.png" alt="image1"> </div>
-            <!-- <div id="slidingImage"> <img src="img/img2.png" alt="image2"> </div> -->
+            <div id="slidingImage"> <img src="img/img2.png" alt="image2"> </div> -->
             <!-- <div id="slidingImage"> <img src="img/header1.png" alt="image3"> </div> -->
             <!-- <div id="slidingImage"> <img src="img/img4.png" alt="image4"> </div> -->
-            <div id="slidingImage"> <img src="img/header_page-0001.jpg" alt="image5"> </div>
+            <!-- <div id="slidingImage"> <img src="img/header_page-0001.jpg" alt="image5"> </div>
         </div>
-    </section>
+    </section> -->
     <!-- Content  -->
+    <!-- Slider -->
+<section>
+    <div id="containerSlider">
+        <div id="slidingImage">
+            <img src="img/4.png" alt="image1">
+        </div>
+        <div id="slidingImage">
+            <img src="img/header_page-0001.jpg" alt="image5">
+        </div>
+    </div>
+    <div id="sliderControls">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+    </div>
+</section>
+
     <div id="mainContainer">
 
         <h1> منتجاتنا </h1>
@@ -149,21 +165,56 @@
             <div id="credit"><a href="#"> © بؤرة </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.Boura_store.com/" target="_blank"> المملكة العربية السعودية-القصيم -عنيزة </a></div>
         </section>
     </footer>
+    <script>
+        // Get references to the slider elements
+        const containerSlider = document.getElementById('containerSlider');
+        const slidingImages = containerSlider.querySelectorAll('#slidingImage');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        
+        let currentSlide = 0;
+        
+        // Function to show the current slide
+        function showSlide(index) {
+            slidingImages.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+        
+        // Initial display
+        showSlide(currentSlide);
+        
+        // Event listeners for previous and next buttons
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slidingImages.length) % slidingImages.length;
+            showSlide(currentSlide);
+        });
+        
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slidingImages.length;
+            showSlide(currentSlide);
+        });
+    </script>
+    
     <!-- slider scripte -->
  <script src="content.js"></script>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script>
     // <!-- slider scripte -->
     
-     $('#containerSlider').slick({
-         dots: true,
-         infinite: true,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         autoplay: true,
-         autoplaySpeed: 5000,
-         rtl: true,  // إضافة هذه الخاصية
-         });
+    //  $('#containerSlider').slick({
+    //      dots: true,
+    //      infinite: true,
+    //      slidesToShow: 1,
+    //      slidesToScroll: 1,
+    //      autoplay: true,
+    //      autoplaySpeed: 5000,
+    //      rtl: true,  // إضافة هذه الخاصية
+    //      });
    
  </script>
 </body>
