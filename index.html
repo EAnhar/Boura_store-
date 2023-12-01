@@ -165,57 +165,31 @@
             <div id="credit"><a href="#"> © بؤرة </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.Boura_store.com/" target="_blank"> المملكة العربية السعودية-القصيم -عنيزة </a></div>
         </section>
     </footer>
-    <script>
-        // Get references to the slider elements
-        const containerSlider = document.getElementById('containerSlider');
-        const slidingImages = containerSlider.querySelectorAll('#slidingImage');
-        const prevButton = document.getElementById('prevButton');
-        const nextButton = document.getElementById('nextButton');
-        
-        let currentSlide = 0;
-        
-        // Function to show the current slide
-        function showSlide(index) {
-            slidingImages.forEach((slide, i) => {
-                if (i === index) {
-                    slide.style.display = 'block';
-                } else {
-                    slide.style.display = 'none';
-                }
-            });
-        }
-        
-        // Initial display
-        showSlide(currentSlide);
-        
-        // Event listeners for previous and next buttons
-        prevButton.addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + slidingImages.length) % slidingImages.length;
-            showSlide(currentSlide);
-        });
-        
-        nextButton.addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % slidingImages.length;
-            showSlide(currentSlide);
-        });
-    </script>
-    
     <!-- slider scripte -->
  <script src="content.js"></script>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script>
-    // <!-- slider scripte -->
-    
-    //  $('#containerSlider').slick({
-    //      dots: true,
-    //      infinite: true,
-    //      slidesToShow: 1,
-    //      slidesToScroll: 1,
-    //      autoplay: true,
-    //      autoplaySpeed: 5000,
-    //      rtl: true,  // إضافة هذه الخاصية
-    //      });
-   
- </script>
+    // Function to start the slider automatically
+    function startSlider() {
+        let currentImage = 1;
+        const totalImages = 5; // Change this to the total number of images in your slider
+        const slideInterval = 3000; // Change this to the desired interval in milliseconds (e.g., 3000 for 3 seconds)
+
+        function changeImage() {
+            document.getElementById('slidingImage').innerHTML = '<img src="img/' + currentImage + '.png" alt="image' + currentImage + '">';
+            currentImage++;
+            if (currentImage > totalImages) {
+                currentImage = 1;
+            }
+        }
+
+        // Call the changeImage function and set it to run at the specified interval
+        setInterval(changeImage, slideInterval);
+    }
+
+    // Run the slider when the page loads
+    window.onload = startSlider;
+</script>
+
 </body>
 </html>
