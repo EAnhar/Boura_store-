@@ -110,20 +110,12 @@
 <section>
     <div id="containerSlider">
         <div id="slidingImage">
-            <img src="img/1.png" alt="image1">
-        </div>
-        <div id="slidingImage">
-            <img src="img/2.jpg" alt="image5">
+            <img src="slider/1.png" alt="image1">
         </div>
     </div>
-    <!-- <div id="sliderControls">
-        <button id="prevButton">Previous</button>
-        <button id="nextButton">Next</button>
-    </div> -->
 </section>
 
     <div id="mainContainer">
-
         <h1> منتجاتنا </h1>
         <div id="containerAccessories">
             <!-- JS rendered code -->
@@ -176,7 +168,7 @@
         const slideInterval = 3000; // Change this to the desired interval in milliseconds (e.g., 3000 for 3 seconds)
 
         function changeImage() {
-            document.getElementById('slidingImage').innerHTML = '<img src="img/' + currentImage + '.png" alt="image' + currentImage + '">';
+            document.getElementById('slidingImage').innerHTML = '<img src="slider/' + currentImage + '.png" alt="image' + currentImage + '">';
             currentImage++;
             if (currentImage > totalImages) {
                 currentImage = 1;
