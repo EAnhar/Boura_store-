@@ -28,7 +28,8 @@
      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/footer.css">
- 
+     <script src="js/slick.min.js"></script>
+
     <!-- slider style  -->
     <style>
         body
@@ -100,6 +101,18 @@
             <div id="slidingImage"> <img src="slider/2.png" alt="image2"> </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function(){
+            $('#containerSlider').slick({
+                // Slick options go here
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000, // Change this to adjust the slide duration
+            });
+        });
+    </script>
     <!-- Content  -->
     <div id="mainContainer">
 
@@ -141,18 +154,17 @@
 
  <script>
     // <!-- slider scripte -->
-    $(document).ready(function(){
-        // Your slider initialization and other jQuery-dependent code here
-        $('#containerSlider').slick({
-         dots: true,
-         infinite: true,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         autoplay: true,
-         autoplaySpeed: 5000,
-         rtl: true,  // إضافة هذه الخاصية
-         });
-    });
+    // $(document).ready(function(){
+    //     $('#containerSlider').slick({
+    //      dots: true,
+    //      infinite: true,
+    //      slidesToShow: 1,
+    //      slidesToScroll: 1,
+    //      autoplay: true,
+    //      autoplaySpeed: 5000,
+    //      rtl: true,  // إضافة هذه الخاصية
+    //      });
+    // });
     
  </script>
 </body>
