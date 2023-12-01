@@ -21,7 +21,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- EXTERNAL LINKS content  -->
     <link rel="stylesheet" href="css/content.css">
 
@@ -150,27 +151,22 @@
     </footer>
     <!-- slider scripte -->
  <script src="content.js"></script>
-
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script>
     // <!-- slider scripte -->
-    jQuery(document).ready(function() {
-    jQuery('#containerSlider').slick({
-        dots: true,
+    
+     $(document).ready(function()
+     {
+     $('#containerSlider').slick({
+         dots: true,
          infinite: true,
          slidesToShow: 1,
          slidesToScroll: 1,
          autoplay: true,
          autoplaySpeed: 5000,
-         rtl: true,  // إضافة هذه الخاصية   
+         rtl: true,  // إضافة هذه الخاصية
          });
-    });
-
-    //  $(document).ready(function()
-    //  {
-    //  $('#containerSlider').slick({
-        
-    //      });
-    //  });
+     });
  </script>
 </body>
 </html>
