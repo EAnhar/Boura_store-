@@ -105,16 +105,18 @@
         </div>
     </section>
     <script>
-        $(document).ready(function(){
-            $('#containerSlider').slick({
-                // Slick options go here
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000, // Change this to adjust the slide duration
-            });
-        });
+$(document).ready(function(){
+        $('#containerSlider').slick({
+         dots: true,
+         infinite: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 5000,
+         rtl: true,  // إضافة هذه الخاصية
+         });
+    });
+
     </script>
     <!-- Content  -->
     <div id="mainContainer">
