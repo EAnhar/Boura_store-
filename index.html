@@ -17,12 +17,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruwudu&display=swap" rel="stylesheet">
     <!-- EXTERNAL LINKS slider -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
+    
     <!-- EXTERNAL LINKS content  -->
     <link rel="stylesheet" href="css/content.css">
 
@@ -95,43 +93,27 @@
 
         </section>
     </header>
-    <!-- Slider 
+    <!-- Slider  -->
     <section>
         <div id="containerSlider">
-            <div id="slidingImage"> <img src="img/4.png" alt="image1"> </div>
-            <div id="slidingImage"> <img src="img/img2.png" alt="image2"> </div> -->
-            <!-- <div id="slidingImage"> <img src="img/header1.png" alt="image3"> </div> -->
-            <!-- <div id="slidingImage"> <img src="img/img4.png" alt="image4"> </div> -->
-            <!-- <div id="slidingImage"> <img src="img/header_page-0001.jpg" alt="image5"> </div>
+            <div id="slidingImage"> <img src="slider/1.png" alt="image1"> </div>
+            <div id="slidingImage"> <img src="slider/2.png" alt="image2"> </div>
         </div>
-    </section> -->
+    </section>
     <!-- Content  -->
-    <!-- Slider -->
-<section>
-    <div id="containerSlider">
-        <div id="slidingImage">
-            <img src="slider/1.png" alt="image1">
-        </div>
-    </div>
-</section>
-
     <div id="mainContainer">
+
         <h1> منتجاتنا </h1>
         <div id="containerAccessories">
             <!-- JS rendered code -->
         </div>
     </div>
-
-
     <!-- Footer -->
       <footer>
         <section>    
             <div id="containerFooter">
                 
                 <div id="webFooter">
-                    <!-- <h3>المتجرالأونلاين</h3>
-                    <p>إكسسوارات </p>
-                    <p>سلاسل </p> -->
                 </div>
                 <div id="webFooter">
                     <h3>روابط اساسية</h3>
@@ -140,12 +122,6 @@
                     <p>اتصل بنا</p>                    
                 </div>
                 <div id="webFooter">
-                    <!-- <h3> partners </h3>
-                    <p> zara </p>
-                    <p> pantaloons </p>
-                    <p> levis </p>
-                    <p> ucb </p>
-                    <p> + many more </p> -->
                 </div>
                 <div id="webFooter">
                     <h3>العنوان</h3>
@@ -157,31 +133,23 @@
             <div id="credit"><a href="#"> © بؤرة </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.Boura_store.com/" target="_blank"> المملكة العربية السعودية-القصيم -عنيزة </a></div>
         </section>
     </footer>
+
+
     <!-- slider scripte -->
+ <script src="js/slick.min.js"></script>
  <script src="content.js"></script>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
  <script>
-    // Function to start the slider automatically
-    function startSlider() {
-        let currentImage = 1;
-        const totalImages = 2; // Change this to the total number of images in your slider
-        const slideInterval = 3000; // Change this to the desired interval in milliseconds (e.g., 3000 for 3 seconds)
-
-        function changeImage() {
-            document.getElementById('slidingImage').innerHTML = '<img src="slider/' + currentImage + '.png" alt="image' + currentImage + '">';
-            currentImage++;
-            if (currentImage > totalImages) {
-                currentImage = 1;
-            }
-        }
-
-        // Call the changeImage function and set it to run at the specified interval
-        setInterval(changeImage, slideInterval);
-    }
-
-    // Run the slider when the page loads
-    window.onload = startSlider;
-</script>
-
+    // <!-- slider scripte -->
+     $('#containerSlider').slick({
+         dots: true,
+         infinite: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 5000,
+         rtl: true,  // إضافة هذه الخاصية
+         });
+ </script>
 </body>
 </html>
