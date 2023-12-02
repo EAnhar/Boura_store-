@@ -78,9 +78,15 @@ Products = [
 
 // اللي تحت ما يحتاج تغيير
 console.clear();
-let counter = localStorage.getItem('counter');
-if (counter) {
-    document.getElementById("badge").innerHTML = counter;
+// let counter = localStorage.getItem('counter');
+// if (counter) {
+//     document.getElementById("badge").innerHTML = counter;
+// }
+
+if(document.cookie.indexOf(',counter=')>=0)
+{
+    let counter = document.cookie.split(',')[1].split('=')[1]
+    document.getElementById("badge").innerHTML = counter
 }
 
 let cartContainer = document.getElementById('cartContainer')
@@ -158,22 +164,49 @@ buttonTag.onclick = function()
     console.log("clicked")
 } 
 
+// let i;
+// let totalAmount = 0;
+
+// let storedOrder = localStorage.getItem('orderId');
+// let items = storedOrder ? storedOrder.split(' ') : [];
+
+// for (i = 0; i < counter; i++) {
+//     let itemCounter = 1;
+//     for (let j = i + 1; j < counter; j++) {
+//         if (Number(items[j]) === Number(items[i])) {
+//             itemCounter += 1;
+//         }
+//     }
+//     totalAmount += Number(Products[items[i] - 1].price) * itemCounter;
+//     dynamicCartSection(Products[items[i] - 1], itemCounter);
+//     i += (itemCounter - 1);
+// }
+
+// amountUpdate(totalAmount);
+
+contentTitle = JSON.parse(this.responseText)
+
+let counter = Number(document.cookie.split(',')[1].split('=')[1])
+document.getElementById("totalItem").innerHTML = ('Total Items: ' + counter)
+
+let item = document.cookie.split(',')[0].split('=')[1].split(" ")
+console.log(counter)
+console.log(item)
+
 let i;
-let totalAmount = 0;
-
-let storedOrder = localStorage.getItem('orderId');
-let items = storedOrder ? storedOrder.split(' ') : [];
-
-for (i = 0; i < counter; i++) {
-    let itemCounter = 1;
-    for (let j = i + 1; j < counter; j++) {
-        if (Number(items[j]) === Number(items[i])) {
-            itemCounter += 1;
+let totalAmount = 0
+for(i=0; i<counter; i++)
+{
+    let itemCounter = 1
+    for(let j = i+1; j<counter; j++)
+    {   
+        if(Number(item[j]) == Number(item[i]))
+        {
+            itemCounter +=1;
         }
     }
-    totalAmount += Number(Products[items[i] - 1].price) * itemCounter;
-    dynamicCartSection(Products[items[i] - 1], itemCounter);
-    i += (itemCounter - 1);
+    totalAmount += Number(contentTitle[item[i]-1].price) * itemCounter
+    dynamicCartSection(contentTitle[item[i]-1],itemCounter)
+    i += (itemCounter-1)
 }
-
-amountUpdate(totalAmount);
+amountUpdate(totalAmount)

@@ -76,13 +76,23 @@ Products = [
 
 
 // اللي تحت ما يحتاج تغيير
+// console.clear()
+// let id = location.search.split('?')[1]
+// console.log(id)
+
+// let counter = localStorage.getItem('counter');
+// if (counter) {
+//     document.getElementById("badge").innerHTML = counter;
+// }
 console.clear()
+
 let id = location.search.split('?')[1]
 console.log(id)
 
-let counter = localStorage.getItem('counter');
-if (counter) {
-    document.getElementById("badge").innerHTML = counter;
+if(document.cookie.indexOf(',counter=')>=0)
+{
+    let counter = document.cookie.split(',')[1].split('=')[1]
+    document.getElementById("badge").innerHTML = counter
 }
 
 
@@ -165,25 +175,37 @@ function dynamicContentDetails(ob)
     buttonDiv.appendChild(buttonTag)
 
     buttonText = document.createTextNode('أضف إلى السلة')
+    // buttonTag.onclick  =   function()
+    // {
+    //     let order = id+" "
+    //     let counter = 1
+
+
+    //     let storedOrder = localStorage.getItem('orderId');
+    //     if (storedOrder) {
+    //         order = id + ' ' + storedOrder;
+    //         counter = Number(localStorage.getItem('counter')) + 1;
+    //     }
+    
+    //     localStorage.setItem('orderId', order);
+    //     localStorage.setItem('counter', counter);
+    //     document.getElementById("badge").innerHTML = counter;
+    //     console.log(localStorage);
+
+    // }
     buttonTag.onclick  =   function()
     {
         let order = id+" "
         let counter = 1
-
-
-        let storedOrder = localStorage.getItem('orderId');
-        if (storedOrder) {
-            order = id + ' ' + storedOrder;
-            counter = Number(localStorage.getItem('counter')) + 1;
+        if(document.cookie.indexOf(',counter=')>=0)
+        {
+            order = id + " " + document.cookie.split(',')[0].split('=')[1]
+            counter = Number(document.cookie.split(',')[1].split('=')[1]) + 1
         }
-    
-        localStorage.setItem('orderId', order);
-        localStorage.setItem('counter', counter);
-        document.getElementById("badge").innerHTML = counter;
-        console.log(localStorage);
-
+        document.cookie = "orderId=" + order + ",counter=" + counter
+        document.getElementById("badge").innerHTML = counter
+        console.log(document.cookie)
     }
-
     
     buttonTag.appendChild(buttonText)
 
@@ -203,3 +225,4 @@ function dynamicContentDetails(ob)
 
     return mainContainer
 }
+dynamicContentDetails(Products)
