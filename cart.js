@@ -184,7 +184,7 @@ buttonTag.onclick = function()
 
 // amountUpdate(totalAmount);
 
-contentTitle = JSON.parse(this.responseText)
+// contentTitle = JSON.parse(this.responseText)
 
 let counter = Number(document.cookie.split(',')[1].split('=')[1])
 document.getElementById("totalItem").innerHTML = ('Total Items: ' + counter)
@@ -205,8 +205,8 @@ for(i=0; i<counter; i++)
             itemCounter +=1;
         }
     }
-    totalAmount += Number(contentTitle[item[i]-1].price) * itemCounter
-    dynamicCartSection(contentTitle[item[i]-1],itemCounter)
+    totalAmount += Number(Products[item[i]-1].price) * itemCounter
+    dynamicCartSection(Products[item[i]-1],itemCounter)
     i += (itemCounter-1)
 }
 amountUpdate(totalAmount)
