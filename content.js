@@ -77,7 +77,7 @@ Products = [
 
 // اللي تحت ما يحتاج تغيير
 console.clear();
-console.log(document.cookie);
+// console.log(document.cookie);
 function dynamicClothingSection(ob) {
   let boxDiv = document.createElement("div");
   boxDiv.id = "box";

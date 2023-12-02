@@ -158,7 +158,6 @@ buttonTag.onclick = function()
     console.log("clicked")
 } 
 
-  
 let i;
 let totalAmount = 0;
 
