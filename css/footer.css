@@ -4,7 +4,7 @@ body
     font-family: 'Lato', sans-serif;
 }
 
-#containerFooter
+#containerFooter 
 {
     width: 100%;
     background-color: rgba(128, 162, 140, 1);
@@ -17,7 +17,11 @@ body
     padding: 15px 300px;
     box-sizing: border-box;
 }
-#containerFooter h3:hover, #containerFooter p:hover
+#webFooter a {
+    color: white;
+    text-decoration: none;
+}
+#containerFooter h3:hover, #containerFooter p:hover,#webFooter a:hover
 {
     color: lightslategray;
     cursor: pointer;
