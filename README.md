@@ -1,22 +1,20 @@
-# E-CommerceWebsite
- A mobile responsive sample of E-Commerce Website using HTML, CSS, JavaScript and API's
- 
- 
- 
+# E-Commerce Website 'Boura'
+Boura is a sample website for selling handmade accessories crafted primarily from date cores. Here is a mobile-responsive sample of an e-commerce website using HTML, CSS, JavaScript, etc. 
+
 ### Home page
-![1](https://user-images.githubusercontent.com/17312616/65086776-b1beb080-d9d0-11e9-9983-143d61ed8fdc.png)
+<img src="https://github.com/EAnhar/Boura_store-/blob/master/preview/Homepage.jpeg" alt="Home page" width="400">
 
+### About Us page
+<img src="https://github.com/EAnhar/Boura_store-/blob/master/preview/AboutUs.jpeg" alt="About Us page" width="400">
 
+### Workshops page 
+<img src="https://github.com/EAnhar/Boura_store-/blob/master/preview/workshops.jpeg" alt="Workshops page" width="400">
 
 ### Content Description page
-![2](https://user-images.githubusercontent.com/17312616/65086777-b1beb080-d9d0-11e9-9e2b-af3b7210bdf3.png)
-
-
+<img src="https://github.com/EAnhar/Boura_store-/blob/master/preview/ContentDescriptionpage.jpeg" alt="Content Description page" width="400">
 
 ### Ordered List page
-![3](https://user-images.githubusercontent.com/17312616/65086778-b2574700-d9d0-11e9-9377-8e4886f582a8.png)
-
-
+<img src="https://github.com/EAnhar/Boura_store-/blob/master/preview/OrderedListpage.jpeg" alt="Ordered List page" width="400">
 
 ### Order confirm page
-![4](https://user-images.githubusercontent.com/17312616/65086779-b2efdd80-d9d0-11e9-95d5-4b1a48eafe04.png)
+<img src="https://github.com/EAnhar/Boura_store-/blob/master/preview/orderPlaced.jpeg" alt="Order Confirm page" width="400">
